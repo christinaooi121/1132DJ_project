@@ -1,0 +1,66 @@
+body {
+  font-family: "Noto Sans TC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.article-container {
+  max-width: 720px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+.article-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 2em;
+}
+
+.article-content p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5em;
+}
+
+.article-content .lede {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2em 0 1em;
+  border-left: 4px solid #000;
+  padding-left: 0.5em;
+}
+
+.article-image {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.article-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.article-image figcaption {
+  font-size: 0.875rem;
+  color: #666;
+  margin-top: 0.5em;
+}
