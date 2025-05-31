@@ -58,6 +58,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+  max-width: 500px;
 }
 
 .article-image figcaption {
