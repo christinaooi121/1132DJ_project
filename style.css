@@ -11,7 +11,7 @@ body {
   max-width: 720px;
   margin: 60px auto;
   padding: 0 20px;
-  background-color: #fff;
+  /*background-color: #fff;*/
 }
 
 .article-title {
@@ -19,6 +19,7 @@ body {
   font-weight: bold;
   line-height: 1.4;
   margin-bottom: 0.5em;
+  color: #0C0C0C;
 }
 
 .article-subtitle {
@@ -44,7 +45,7 @@ body {
   font-size: 1.5rem;
   font-weight: bold;
   margin: 2em 0 1em;
-  border-left: 4px solid #000;
+  border-left: 4px solid #E3120B;
   padding-left: 0.5em;
 }
 
