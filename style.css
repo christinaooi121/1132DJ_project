@@ -51,6 +51,11 @@ body {
 
 .article-image {
   margin: 2em 0;
+  background-color: #f9f9f9; /* 淺灰背景 */
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03); /* 輕微陰影 */
+  padding: 1em;
   text-align: center;
 }
 
@@ -58,11 +63,17 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
-  max-width: 500px;
 }
 
 .article-image figcaption {
-  font-size: 0.875rem;
-  color: #666;
-  margin-top: 0.5em;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 0.75em;
+  padding-top: 0.5em;
+  border-top: 1px solid #eee; /* 上邊界線 */
+  text-align: left; /* 更正式一點 */
+}
+
+.article-image.chart-image {
+  border-left: 4px solid #d33; /* 報導者慣用紅色 */
 }
