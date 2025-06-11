@@ -201,10 +201,11 @@ body {
 }
 
 .simple-table {
-  width: 90%;
+  width: auto;
+  max-width: 95%;
+  margin: 1em auto;
   border-collapse: collapse;
-  margin: 1em 0;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.6;
 }
 
