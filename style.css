@@ -6,8 +6,9 @@ body {
   background-color: #fafafa;
   color: #222;
 }
+
 .article-container {
-  max-width: 720px;
+  max-width: 800px;
   margin: 60px auto;
   padding: 0 20px;
   background-color: #fff;
@@ -48,18 +49,21 @@ body {
 }
 
 .article-image {
-  margin: 2em 0;
-  background-color: #ffffff; /* 淺灰背景 */
+  width: 85%;
+  margin: 2em auto; /* auto 讓整塊居中 */
+  background-color: #f9f9f9;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03); /* 輕微陰影 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
   padding: 1em;
+  text-align: center;
 }
 
 .article-image img {
-  max-width: 600px;
+  display: block;
+  margin: 0 auto; /* 保證圖片自己水平置中 */
+  max-width: 100%;
   height: auto;
-  border-radius: 4px;
 }
 
 .article-image figcaption {
