@@ -49,9 +49,9 @@ body {
 }
 
 .article-image {
-  width: 85%;
+  width: 80%;
   margin: 2em auto; /* auto 讓整塊居中 */
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
@@ -198,4 +198,29 @@ body {
 ::-moz-selection {
   background-color: #C9A377; /* Firefox 用 */
   color: #fff;
+}
+
+.simple-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.simple-table th,
+.simple-table td {
+  border: 1px solid #ddd;
+  padding: 0.75em 1em;
+  text-align: left;
+  vertical-align: top;
+}
+
+.simple-table thead th {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.simple-table tbody tr:nth-child(even) {
+  background-color: #fafafa;
 }
