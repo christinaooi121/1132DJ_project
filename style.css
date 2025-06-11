@@ -60,13 +60,13 @@ body {
 }
 
 .article-image img {
-  max-width: 100%;
+  max-width: 540px;
   height: auto;
   border-radius: 4px;
 }
 
 .article-image figcaption {
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   color: #555;
   margin-top: 0.75em;
   padding-top: 0.5em;
@@ -76,4 +76,19 @@ body {
 
 .article-image.chart-image {
   border-left: 4px solid #d33; /* 報導者慣用紅色 */
+}
+
+.article-content a {
+  color: #9c6b33; /* 正常狀態用咖啡色字 */
+  text-decoration: none; /* 不要底線 */
+  padding: 2px 4px; /* 有一點點內邊距，避免 hover 看起來太擠 */
+  border-radius: 3px; /* 小圓角 */
+  transition: background-color 0.2s, color 0.2s; /* 平滑變化 */
+}
+
+.article-content a:hover,
+.article-content a:focus {
+  background-color: #C9A377; /* 淡咖啡色背景，可自行微調 */
+  color: #fff; /* 白字 */
+  text-decoration: none; /* 保持無底線 */
 }
