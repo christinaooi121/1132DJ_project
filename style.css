@@ -7,40 +7,6 @@ body {
   color: #222;
 }
 
-.article-container {
-  max-width: 720px;
-  margin: 60px auto;
-  padding: 0 20px;
-  /*background-color: #fff;*/
-}
-
-.article-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  line-height: 1.4;
-  margin-bottom: 0.5em;
-  color: #0C0C0C;
-}
-
-.article-subtitle {
-  font-size: 1.25rem;
-  font-weight: 400;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 2em;
-}
-
-.article-content p {
-  font-size: 1.125rem;
-  margin-bottom: 1.5em;
-}
-
-.article-content .lede {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 2em;
-}
-
 .section-title {
   font-size: 1.5rem;
   font-weight: bold;
@@ -51,16 +17,15 @@ body {
 
 .article-image {
   margin: 2em 0;
-  background-color: #f9f9f9; /* 淺灰背景 */
+  background-color: #ffffff; /* 淺灰背景 */
   border: 1px solid #e0e0e0;
   border-radius: 6px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03); /* 輕微陰影 */
   padding: 1em;
-  text-align: center;
 }
 
 .article-image img {
-  max-width: 540px;
+  max-width: 600px;
   height: auto;
   border-radius: 4px;
 }
@@ -94,22 +59,42 @@ body {
 }
 
 .badge {
-  display: inline-block; /* 讓背景剛好包住文字 */
-  background-color: #caa272; /* 你圖上的大約是這個色，可以再微調 */
+  display: inline-block;
+  background-color: #bd0f23; 
   color: #fff;
   font-weight: bold;
   padding: 0.5em 1.5em;
-  border-radius: 999px; /* 超大圓角就會變成 pill 形狀 */
-  font-size: 1.1rem; /* 你可以依需要調整 */
+  border-radius: 999px; 
+  font-size: 1.1rem; 
   text-align: center;
 }
-.article-meta {
+
+.article-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3em;
   margin-top: 3em;
-  padding-top: 2em;
-  border-top: 1px solid #ddd;
+}
+
+/* 主文區塊最大寬度 + 靠左 */
+.article-content {
+  max-width: 720px;
+  flex: 1;
+}
+
+/* 右側 info 區塊 */
+.article-meta {
+  flex: 0 0 260px;
   font-size: 0.95rem;
   color: #333;
   line-height: 1.6;
+  border-top: 1px solid #ddd;
+  padding-top: 1em;
+  position: sticky;
+  top: 100px; /* 捲動時會停在視窗內固定位置 */
+  align-self: flex-start;
 }
 
 .article-meta p {
@@ -123,7 +108,7 @@ body {
 }
 
 .meta-staff strong {
-  color: #9c6b33; /* 咖啡色，呼應你前面的風格 */
+  color: #9c6b33;
 }
 
 .meta-tags {
@@ -148,7 +133,24 @@ body {
 }
 
 .meta-tags a:hover {
-  background-color: #caa272; /* 你前面 badge 用的色系 */
+  background-color: #caa272;
   color: #fff;
   border-color: #caa272;
+}
+
+/* 手機版要收到底下，不要側邊欄 */
+@media (max-width: 1000px) {
+  .article-wrapper {
+    flex-direction: column;
+  }
+
+  .article-meta {
+    position: relative;
+    top: auto;
+    flex: auto;
+    max-width: 100%;
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #ddd;
+  }
 }
